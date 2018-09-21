@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+margin:0px; /*Это хорошая практика обнулять поля и отсупы, т.к. различные браузеры их по разному воспринимают. */
+padding:0px;
+text-align:left; /*Выравниваем макет по центру в старых версиях браузеров */
+}
+
+/*Шапка */
+#header {
+
+}
+#logo {
+	margin:auto;
+	width:1024px;
+	height:300px;
+	background-image:url(img/Logo1.jpg);
+	background-repeat:no-repeat;
+}
+
+/*Средний блок, который делим на контейнер, в котором будет навигационное меню и основная информация*/
+#content_container{
+	background-image:url(img/back_content.jpg);
+	background-repeat:repeat;
+	
+}
+
+img {
+	border:none;  /* Убираем долбаную синюю рамку ссылок-картинок*/
+}
+
+/*Навигационное меню*/
+#nav_menu {
+	margin:auto;
+	padding:0;
+	width:1000px;
+	height:31px;
+	background-color:#FFF;
+	/*background-image:url(img/back_menu.jpg);
+	background-repeat:repeat; */
+
+}
+
+/*Пришлось задать 3 класса, чтобы кнопки меню правильно расположились относительно друг друга и были правильные отступы*/
+.menu {
+	padding:0;
+	margin:0;
+	margin-left:1px;
+	float:left;
+	}
+.menu_leftb {
+	padding:0;
+	margin:0;
+	margin-left:0;
+	float:left;
+}
+
+.menu_rightb {
+	padding:0;
+	margin:0;
+	margin-left:1px;
+	float:right;
+}
+
+/*Этот класс задает как располагать фото в среднем разделе*/
+.content_photo {
+	margin:15px;
+	float:left;
+}
+
+/*Средний раздел*/
+#content {
+	margin:auto;
+	width:1000px;
+	min-height:252px;
+}
+
+#content p{
+	font:"Times New Roman", Times, serif;
+	text-indent:15px;
+	font-size:16px;
+	color:#90F;
+}
+
+
+
+/*Нижний информационный блок с галереей */
+#gallery_container {
+	margin:auto;
+	/*background-image:url(img/container_gallery.jpg);
+	background-repeat:repeat; */
+	background-image:url(img/container_gallery1.jpg);
+	background-position:center;
+	min-height:800px;
+}
+
+/*В этом блоке содержится меню и фотки. Он создан дополнительно и помещен в контейнер для выравнивания  по ширине*/
+#gallery_fon {
+	margin:auto;
+	width:1000px;
+	min-height:800px;
+	/*background-image:url(img/gallery_fon.jpg); */
+
+} 
+
+
+/*меню "Наши молодожены*/
+#gallery_menu {
+	margin:auto;
+	width:1000px;
+	height:35px;
+	background-image:url(img/back_menu.jpg);
+	background-repeat:repeat;
+}
+
+#gallery_menu img{
+	margin:auto;
+	display:block;
+	
+}
+
+/*#gallerycontent {
+	margin:auto;
+	margin-top:12px;
+	width:1000px;
+	height:682px;
+	background-image:url(img/gallery_photo_fon.jpg);
+	/*background-color:#A559D2; 
+} 
+*/
+
+/* Содержимое нижнего фотоблока*/
+.gallerycontent {
+	margin:auto;
+	margin-top:12px;
+	width:1000px;
+	height:635px;
+	background-image:url(img/gallery_photo_fon.jpg);
+} 
+
+.gallerycontent img {  /* делаем картинки блоками, т.к. в строчных элементах мешают отступы по умолчанию*
+Если вы верстали-верстали и в конце концов во всех браузерах все нормально выглядит, а в Internet Explorer 6 у float-элемента (элементов) двойной margin (по сравнению с указанным в стилях), то вам просто нужно указать для этого float-элемента CSS-свойство display:inline.*/
+	margin:0;
+	border:none;
+	display:inline;  
+	margin-top:5px;
+	margin-left:5px;
+	float:left;
+	
+
+}
+
+
+
+
+/* Пустой блок после контента */
+#clear{
+height:0;
+margin:0;
+padding:0;
+font-size:1px;
+line-height:0px;
+clear:both;
+}
+
+/* Подвал для счетчиков*/
+
+#footer {
+	background-color:#003;
+	min-height:31px;
+
+}
+
+.counter {
+	margin:auto;
+	float:left;
+}
+
+.vk {background:#0F0;
+border:thick;
+float:left
+}
+
+.letter {
+	text-align:center;
+	color:#FFF;
+	font:"Arial Black", Gadget, sans-serif;
+	float:right;
+
+}
+		
